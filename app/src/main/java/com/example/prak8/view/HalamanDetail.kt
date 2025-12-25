@@ -26,6 +26,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.prak8.R
+import com.example.prak8.modeldata.DataSiswa
 import com.example.prak8.uicontroller.route.DestinasiDetail
 import com.example.prak8.viewmodel.DetailViewModel
 import com.example.prak8.viewmodel.StatusUIDetail
@@ -126,3 +127,8 @@ private fun BodyDetailDataSiswa(
         }
     }
 }
+
+@Composable
+fun DetailDataSiswa(
+    siswa: DataSiswa, modifier: Modifier = Modifier
+) {}
