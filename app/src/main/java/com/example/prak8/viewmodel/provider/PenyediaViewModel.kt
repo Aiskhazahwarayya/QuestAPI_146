@@ -1,4 +1,4 @@
-package com.example.prak8.viewmodel.provider
+package com.example.praktikum8.viewmodel.provider
 
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.createSavedStateHandle
@@ -11,7 +11,8 @@ import com.example.prak8.viewmodel.EditViewModel
 import com.example.prak8.viewmodel.EntryViewModel
 import com.example.prak8.viewmodel.HomeViewModel
 
-fun CreationExtras.aplikasiDataSiswa():AplikasiDataSiswa = (
+
+fun CreationExtras.aplikasiDataSiswa(): AplikasiDataSiswa = (
         this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as
                 AplikasiDataSiswa
         )
@@ -22,13 +23,13 @@ object PenyediaViewModel {
         initializer {
             DetailViewModel(
                 this.createSavedStateHandle(),
-                aplikasiDataSiswa().containerApp.repositoryDataSiswa
+                aplikasiDataSiswa().container.repositoryDataSiswa
             )
         }
         initializer {
             EditViewModel(
                 this.createSavedStateHandle(),
-                aplikasiDataSiswa().containerApp.repositoryDataSiswa
+                aplikasiDataSiswa().container.repositoryDataSiswa
             )
         }
     }
