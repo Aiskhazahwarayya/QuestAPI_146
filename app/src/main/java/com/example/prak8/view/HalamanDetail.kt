@@ -75,6 +75,12 @@ fun DetailSiswaScreen(
                 .padding(innerPadding)
                 .verticalScroll(rememberScrollState())
         )
-
     }
 }
+
+@Composable
+private fun BodyDetailDataSiswa(
+    statusUIDetail: StatusUIDetail,
+    onDelete: () -> Unit,
+    modifier: Modifier = Modifier
+){}
