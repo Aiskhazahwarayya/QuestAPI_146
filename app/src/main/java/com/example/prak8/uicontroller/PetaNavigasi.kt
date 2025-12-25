@@ -14,6 +14,8 @@ import com.example.prak8.uicontroller.route.DestinasiDetail
 import com.example.prak8.uicontroller.route.DestinasiEdit
 import com.example.prak8.uicontroller.route.DestinasiEntry
 import com.example.prak8.uicontroller.route.DestinasiHome
+import com.example.prak8.view.DetailSiswaScreen
+import com.example.prak8.view.EditSiswaScreen
 import com.example.prak8.view.EntrySiswaScreen
 import com.example.prak8.view.HomeScreen
 
